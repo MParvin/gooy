@@ -1,3 +1,4 @@
-baseURL = 'https://example.org/'
-locale = 'en-us'
-title = 'My New Hugo Project'
+baseURL = 'https://mparvin.ir/'
+locale = 'fa-ir'
+title = 'My Blog'
+theme = ["newsroom"]
