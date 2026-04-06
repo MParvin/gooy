@@ -1,0 +1,22 @@
+# Hugo default output directory
+public/
+
+# Hugo resources directory (generated images, processed assets)
+resources/_gen/
+
+# Build lock file
+.hugo_build.lock
+
+# JavaScript configuration files (if using Hugo Pipes with JS)
+assets/jsconfig.json
+
+# Build statistics
+hugo_stats.json
+
+# Local OS files
+.DS_Store
+Thumbs.db
+
+# Optional: If you use Node.js for post-processing or Tailwind
+node_modules/
+
