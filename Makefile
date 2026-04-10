@@ -3,7 +3,9 @@ REMOTE_DIR := /var/www/html/
 PARVIN_REMOTE_DIR := /var/www/mparvin/
 PUBLIC_DIR := ./public
 
-.PHONY: help build deploy clean preview
+.PHONY: help build deploy clean preview mparvin all
+all: mparvin deploy
+	@echo "✓ Ran mparvin and deploy targets"
 
 help:
 	@echo ""
@@ -16,7 +18,7 @@ build:
 	hugo --minify --gc --cleanDestinationDir
 
 preview:
-	hugo server --buildDrafts --buildFuture --disableFastRender
+	hugo server --buildDrafts --buildFuture --disableFastRender --openBrowser
 
 deploy: build
 	rsync -avz --delete \
