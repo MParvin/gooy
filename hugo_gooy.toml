@@ -38,3 +38,11 @@ pagerSize = 10
 
 languageCode = "fa-IR"
 defaultContentLanguage = "fa"
+
+[[params.sidebar.links]]
+  name = "DevDocs"
+  url = "https://docs.mparvin.ir"
+
+[[params.sidebar.links]]
+  name = "Gooy"
+  url = "https://gooy.site"
