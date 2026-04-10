@@ -1,0 +1,4 @@
+baseURL = 'https://Gooy.Site/'
+locale = 'fa-ir'
+title = 'A window to clarity in Iran’s internet darkness'
+theme = ["newsroom"]

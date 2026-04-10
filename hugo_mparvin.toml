@@ -1,0 +1,4 @@
+baseURL = 'https://mparvin.ir/'
+locale = 'fa-ir'
+title = "Mohammad Parvin's Blog"
+theme = ["newsroom"]
