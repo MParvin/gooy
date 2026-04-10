@@ -105,7 +105,8 @@ AI-generated or AI-assisted analytical content, that is verified and curated by 
 ## 👤 Author
 
 MParvin
-- DevOps engineer, Security researcher, Programmer, and open-source advocate
+- DevOps engineer, Security researcher, Programmer, and open-source fan
+- Passionate about free software, security, and knowledge sharing
 
 ## 📬 Contact
 - Telegram: [@mmparvin](https://t.me/mmparvin)
