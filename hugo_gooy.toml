@@ -2,3 +2,12 @@ baseURL = 'https://Gooy.Site/'
 locale = 'fa-ir'
 title = 'A window to clarity in Iran’s internet darkness'
 theme = ["newsroom"]
+author = "MParvin"
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
+
+[permalinks]
+pages = ':contentbasename/'
+

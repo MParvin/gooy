@@ -2,3 +2,12 @@ baseURL = 'https://mparvin.ir/'
 locale = 'fa-ir'
 title = "Mohammad Parvin's Blog"
 theme = ["newsroom"]
+author = "MParvin"
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
+
+[permalinks]
+pages = ':contentbasename/'
+
