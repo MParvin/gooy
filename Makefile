@@ -1,12 +1,9 @@
 SERVER     := gooy
 REMOTE_DIR := /var/www/html/
-PARVIN_REMOTE_DIR := /var/www/mparvin/
+PARVIN_REMOTE_DIR := /var/www/gooy/
 PUBLIC_DIR := ./public
 
-.PHONY: help build deploy clean preview mparvin all
-all: mparvin deploy
-	@echo "✓ Ran mparvin and deploy targets"
-
+.PHONY: help build deploy clean preview all
 help:
 	@echo ""
 	@echo "Usage: make <target>"
@@ -30,11 +27,3 @@ clean:
 	rm -rf $(PUBLIC_DIR)
 	@echo "✓ Cleaned public/"
 
-mparvin:
-	cp hugo_mparvin.toml hugo.toml
-	hugo --minify --gc --cleanDestinationDir
-	cp hugo_gooy.toml hugo.toml
-	rsync -avz --delete \
-		--exclude='.DS_Store' \
-		$(PUBLIC_DIR)/ $(SERVER):$(PARVIN_REMOTE_DIR)
-	@echo "✓ Deployed to $(SERVER):$(PARVIN_REMOTE_DIR)"

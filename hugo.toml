@@ -41,8 +41,8 @@ defaultContentLanguage = "fa"
 
 [[params.sidebar.links]]
   name = "DevDocs"
-  url = "https://docs.mparvin.ir"
+  url = "https://docs.gooy.site"
 
 [[params.sidebar.links]]
-  name = "Gooy"
-  url = "https://gooy.site"
+  name = "W3School"
+  url = "https://w3s.gooy.site"
