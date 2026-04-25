@@ -4,7 +4,8 @@ defaultContentLanguage = "en"
 title = "Gooy"
 theme = ["gooy"]
 author = "MParvin"
-
+ga_analytics = ""
+ga_verify = ""
 enableRobotsTXT = true
 canonifyURLs = true
 
@@ -40,9 +41,9 @@ languageCode = "fa-IR"
 defaultContentLanguage = "fa"
 
 [[params.sidebar.links]]
-  name = "DevDocs"
+  name = "مستندات برنامه نویسی"
   url = "https://docs.gooy.site"
 
 [[params.sidebar.links]]
-  name = "W3School"
+  name = "سایت w3school برای اینترنت ملی"
   url = "https://w3s.gooy.site"
