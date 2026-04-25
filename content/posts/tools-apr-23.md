@@ -1,9 +1,22 @@
-+++
-title = "دانلود ابزارهای کاربردی (Cursor، DeltaChat، Jitsi و بیشتر)"
-draft = false
-categories = ["نرم‌افزار", "زیرساخت"]
-tags = ["دانلود", "لینوکس", "ویندوز", "اندروید", "مک", "DevOps", "Self-Hosted"]
-+++
+---
+title: "دانلود ابزارهای کاربردی (Cursor، DeltaChat، Jitsi و بیشتر)"
+date: 2026-04-23
+draft: false
+tags:
+  - tools
+  - download
+  - linux
+  - devops
+  - self-hosted
+  - android
+  - mac
+  - windows
+categories:
+  - software
+  - infrastructure
+description: "دانلود ابزارهای کاربردی برای سیستم‌های مختلف"
+image: "/images/tools_apr_23.png"
+
 ---
 <p dir="rtl">
 یه سری فایل کاربردی و بدون دردسر رو برات گذاشتم روی گوی. مستقیم دانلود کن، بدون چرخیدن تو سایت‌های شلوغ 🙂

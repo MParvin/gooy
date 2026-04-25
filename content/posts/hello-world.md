@@ -1,8 +1,11 @@
-+++
-date = '2026-04-10T05:48:28+03:30'
-draft = false
-title = 'Hello World'
-+++
+---
+title: "Hello World"
+date: 2026-04-10
+draft: false
+description: "اولین پست در گوی"
+image: "/images/hello-world-gooy.png"
+---
+
 به گوی خوش آمدید
 
 با توجه به قطعی اینترنت ایران، تصمیم گرفتم اخبار حوزه  کامپیوتر و تکنولوژی رو اینجا بذارم
