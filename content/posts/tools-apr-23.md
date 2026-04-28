@@ -19,11 +19,11 @@ image: "/images/tools_apr_23.png"
 
 ---
 <p dir="rtl">
-یه سری فایل کاربردی و بدون دردسر رو برات گذاشتم روی گوی. مستقیم دانلود کن، بدون چرخیدن تو سایت‌های شلوغ 🙂
+یه سری فایل کاربردی و بدون دردسر رو برات گذاشتم روی گوی. مستقیم دانلود کن، بدون چرخیدن تو سایت‌های شلوغ
 </p>
 <br/><br/>
 
-## 💻 Cursor
+## Cursor
 
 <p dir="rtl">
 نسخه RPM برای لینوکس های Redhat Based مثل Fedora, Alma, Rocky, Suse و ...
@@ -33,7 +33,7 @@ image: "/images/tools_apr_23.png"
 
 ---
 
-## 💬 DeltaChat (برای همه پلتفرم‌ها)
+## DeltaChat (برای همه پلتفرم‌ها)
 
 **Android:**
 👉 [https://dl.gooy.site/deltachat.apk](https://dl.gooy.site/deltachat.apk)
@@ -55,7 +55,14 @@ image: "/images/tools_apr_23.png"
 
 ---
 
-## 🧩 Jitsi (برای راه‌اندازی سرور)
+## Docker for Linux
+👉 [https://dl.gooy.site/docker-29.3.1.tgz](https://dl.gooy.site/docker-29.3.1.tgz)
+👉 [https://dl.gooy.site/docker-29.3.1.tgz](https://dl.gooy.site/docker)
+
+طریقه نصب آخرین نسخه داکر بدون اینترنت بین الملل، داخل این پست گوی هست
+[نصب داکر در عصر حجر](https://gooy.site/posts/نصب-داکر-در-عصر-حجر/)
+
+## Jitsi (برای راه‌اندازی سرور)
 
 **Docker & Config:**
 <br/>
@@ -79,7 +86,7 @@ image: "/images/tools_apr_23.png"
 
 <br/>
 
-## 📝 سایر ابزارها
+## سایر ابزارها
 
 **Joplin Linux:**
 👉 [https://dl.gooy.site/joplin](https://dl.gooy.site/joplin)
