@@ -3,6 +3,7 @@ REMOTE_DIR := /var/www/html/
 PARVIN_REMOTE_DIR := /var/www/gooy/
 PUBLIC_DIR := ./public
 
+.DEFAULT_GOAL := deploy
 .PHONY: help build deploy clean preview all
 help:
 	@echo ""
