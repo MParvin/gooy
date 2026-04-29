@@ -1,6 +1,5 @@
 SERVER     := gooy
-REMOTE_DIR := /var/www/html/
-PARVIN_REMOTE_DIR := /var/www/gooy/
+REMOTE_DIR := /opt/src/gooy/
 PUBLIC_DIR := ./public
 
 .DEFAULT_GOAL := deploy
