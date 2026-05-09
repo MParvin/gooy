@@ -15,7 +15,7 @@ build:
 	hugo --minify --gc --cleanDestinationDir
 
 preview:
-	hugo server --buildDrafts --buildFuture --disableFastRender --openBrowser
+	hugo server --buildDrafts --buildFuture --disableFastRender --openBrowser --ignoreCache
 
 deploy: build
 	rsync -avz --delete \
