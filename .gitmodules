@@ -1,4 +1,4 @@
-[submodule "themes/gooy"]
-	path = themes/gooy
+[submodule "themes/gooy-theme"]
+	path = themes/gooy-theme
 	url = https://github.com/mparvin/gooy-theme.git
-	branch = master
+	branch = main
