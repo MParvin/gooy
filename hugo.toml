@@ -1,6 +1,5 @@
 baseURL = "https://gooy.site/"
-languageCode = "en-us"
-defaultContentLanguage = "en"
+defaultContentLanguage = "fa"
 title = "Gooy"
 theme = ["gooy-theme"]
 author = "MParvin"
@@ -8,6 +7,11 @@ ga_analytics = ""
 ga_verify = ""
 enableRobotsTXT = true
 canonifyURLs = true
+
+[languages.fa]
+locale = "fa-IR"
+label = "فارسی"
+weight = 1
 
 [pagination]
 pagerSize = 10
@@ -37,13 +41,17 @@ pagerSize = 10
   [markup.highlight]
     noClasses = false
 
-languageCode = "fa-IR"
-defaultContentLanguage = "fa"
+[params]
+rtl = true
+defaultMode = "dark"
+defaultImage = "default-post.svg"
 
 [[params.sidebar.links]]
   name = "مستندات برنامه نویسی"
   url = "https://docs.gooy.site"
+  icon = "docs"
 
 [[params.sidebar.links]]
   name = "w3school برای اینترنت ملی"
   url = "https://w3s.gooy.site"
+  icon = "globe"

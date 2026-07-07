@@ -1,5 +1,5 @@
 ---
-title: "Hello World"
+title: "گوی متحجرین"
 date: 2026-04-26T00:00:00Z
 draft: false
 description: "به گوی خوش آمدید"
