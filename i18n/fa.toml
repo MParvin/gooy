@@ -1,0 +1,26 @@
+[archive]
+  other = "آرشیو"
+[archive_text]
+  other = "مشاهده آرشیو"
+[author_profile]
+  other = "پروفایل {{ . }}"
+[designed_by]
+  other = "طراحی <a href='{{ .url }}' target='_blank' title='پروفایل LinkedIn' rel='nonopener'>{{ .name }}</a>"
+[go_back]
+  other = "بازگشت"
+[latest_posts]
+  other = "آخرین مطالب"
+[link_copied]
+  other = "لینک کپی شد"
+[not_found_text]
+  other = "صفحه مورد نظر یافت نشد"
+[not_found_title]
+  other = "اوه!"
+[share_story]
+  other = "اشتراک‌گذاری"
+[toggle_dark_mode]
+  other = "حالت تاریک"
+[featured_posts]
+  other = "مطالب ویژه"
+[featured]
+  other = "ویژه"
