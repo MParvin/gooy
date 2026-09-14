@@ -1,6 +1,6 @@
 ---
 title: "Workload-Aware Scheduling در Kubernetes v1.37 به Beta رسید"
-date: 2026-09-14T14:00:00+03:30
+date: 2026-09-14T11:20:00+03:30
 draft: false
 tags: ["kubernetes", "scheduling", "gang-scheduling", "dra", "ai"]
 categories: ["DevOps"]

@@ -1,6 +1,6 @@
 ---
 title: "سری ۲۳ پچ kbuild: بیلد کرنل تا ۳۶٪ سریع‌تر — هنوز در mainline نیست"
-date: 2026-09-14T13:00:00+03:30
+date: 2026-09-14T11:10:00+03:30
 draft: false
 tags: ["linux", "kernel", "kbuild", "llm", "performance"]
 categories: ["DevOps"]

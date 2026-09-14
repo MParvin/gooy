@@ -1,6 +1,6 @@
 ---
 title: "Karmada از CNCF فارغ‌التحصیل شد: ارکستراسیون چندکلاستری به بلوغ رسید"
-date: 2026-09-14T15:00:00+03:30
+date: 2026-09-14T11:30:00+03:30
 draft: false
 tags: ["karmada", "cncf", "kubernetes", "multi-cluster", "kubecon"]
 categories: ["DevOps"]

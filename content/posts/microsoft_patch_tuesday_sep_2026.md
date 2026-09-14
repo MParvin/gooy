@@ -1,6 +1,6 @@
 ---
 title: "Patch Tuesday سپتامبر ۲۰۲۶ مایکروسافت: نزدیک به هزار CVE و دو zero-day فعال"
-date: 2026-09-14T21:00:00+03:30
+date: 2026-09-14T12:30:00+03:30
 draft: false
 tags: ["microsoft", "patch-tuesday", "cve", "windows", "exchange", "security"]
 categories: ["Security"]

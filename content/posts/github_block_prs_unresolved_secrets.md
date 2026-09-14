@@ -1,6 +1,6 @@
 ---
 title: "قوانین جدید GitHub: مسدود کردن Pull Request با secret اسکن‌نشده"
-date: 2026-09-14T12:00:00+03:30
+date: 2026-09-14T11:00:00+03:30
 draft: false
 tags: ["github", "secret-scanning", "rulesets", "actions", "security"]
 categories: ["Security", "DevOps"]

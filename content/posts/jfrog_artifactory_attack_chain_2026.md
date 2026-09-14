@@ -1,6 +1,6 @@
 ---
 title: "حمله زنجیره‌ای به JFrog Artifactory: از توکن ناشناس تا backdoor"
-date: 2026-09-14T18:00:00+03:30
+date: 2026-09-14T12:00:00+03:30
 draft: false
 tags: ["jfrog", "artifactory", "cve", "supply-chain", "malware", "security"]
 categories: ["Security", "DevOps"]
