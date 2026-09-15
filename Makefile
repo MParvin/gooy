@@ -15,7 +15,7 @@ build: clean cache-remove
 	hugo --minify --gc --cleanDestinationDir
 
 preview: build
-	firefox http://localhost:1313/
+	#firefox http://localhost:1313/
 	hugo server --buildDrafts --buildFuture --disableFastRender --openBrowser --ignoreCache -p 1313
 
 deploy: build
@@ -23,7 +23,7 @@ deploy: build
 		--exclude='.DS_Store' \
 		$(PUBLIC_DIR)/ $(SERVER):$(REMOTE_DIR)
 	@echo "✓ Deployed to $(SERVER):$(REMOTE_DIR)"
-	firefox gooy.site
+	#firefox gooy.site
 
 cache-remove:
 	rm -rf ./resources/_gen
