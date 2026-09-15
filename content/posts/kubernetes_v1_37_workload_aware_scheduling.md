@@ -5,6 +5,7 @@ draft: false
 tags: ["kubernetes", "scheduling", "gang-scheduling", "dra", "ai"]
 categories: ["DevOps"]
 description: "در Kubernetes v1.37 APIهای Workload و PodGroup و gang scheduling به Beta رسیدند؛ CompositePodGroup و اشتراک DRA ResourceClaim برای گروه‌های پاد."
+image: "/images/kubernetes-v137-workload-aware-scheduling-beta.jpg"
 ---
 
 <div dir="rtl">

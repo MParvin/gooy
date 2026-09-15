@@ -5,6 +5,7 @@ draft: false
 tags: ["github", "secret-scanning", "rulesets", "actions", "security"]
 categories: ["Security", "DevOps"]
 description: "GitHub در پیش‌نمایش عمومی قانونی برای ruleset گذاشته که merge شدن Pull Request با هشدار باز secret scanning را مسدود می‌کند؛ همان هفته cache-mode هم GA شد."
+image: "/images/github-secret-scanning-ruleset.jpg"
 ---
 
 <div dir="rtl">

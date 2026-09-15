@@ -5,6 +5,7 @@ draft: false
 tags: ["karmada", "cncf", "kubernetes", "multi-cluster", "kubecon"]
 categories: ["DevOps"]
 description: "CNCF در KubeCon چین پروژه Karmada را به سطح Graduation رساند؛ ارکستراسیون اپلیکیشن روی چند کلاستر Kubernetes بدون تغییر خود اپ."
+image: "/images/karmada_cnfc.jpg"
 ---
 
 <div dir="rtl">

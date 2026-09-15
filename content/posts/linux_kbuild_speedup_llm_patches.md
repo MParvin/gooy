@@ -5,6 +5,7 @@ draft: false
 tags: ["linux", "kernel", "kbuild", "llm", "performance"]
 categories: ["DevOps"]
 description: "Lorenzo Stoakes از ARM سری ۲۳ پچ برای موازی‌سازی گلوگاه‌های kbuild فرستاده؛ allmodconfig تا ۳۶٪ سریع‌تر. LLM کمک کرده، کد بازبینی شده، Torvalds موافق است، هنوز merge نشده."
+image: "/images/kbuild-patch-series-23-kernel-speedup.jpg"
 ---
 
 <div dir="rtl">
