@@ -5,15 +5,16 @@ draft: false
 tags: ["kubernetes", "scheduling", "gang-scheduling", "dra", "ai"]
 categories: ["DevOps"]
 description: "در Kubernetes v1.37 APIهای Workload و PodGroup و gang scheduling به Beta رسیدند؛ CompositePodGroup و اشتراک DRA ResourceClaim برای گروه‌های پاد."
+image: "/images/kubernetes-v1-37-workload-aware-scheduling.png"
 ---
 
 <div dir="rtl">
 
-## چه اتفاقی افتاد؟
+برای job توزیع‌شده — آموزش AI، MPI، خیلی از batchها — یا همه Podها با هم جا می‌شوند، یا هیچ‌کدام. اگر scheduler چهار worker از هشت تا را بنشاند و GPU تمام شود، آن چهار تا فقط منابع را می‌سوزانند. اسم این ایده **gang scheduling** است.
 
-همزمان با [ریلیز Kubernetes v1.37](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/)، تیم زمان‌بندی در [پست ۸ سپتامبر](https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/) نوشت که Workload-Aware Scheduling یک پله جلو آمده است.
+تا امروز یا به schedulerهای خارجی (Volcano، Kueue، Coscheduling) تکیه می‌کردید، یا partial scheduling را با گوشت و پوست می‌دیدید. همزمان با [ریلیز Kubernetes v1.37](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/)، تیم زمان‌بندی در [پست ۸ سپتامبر](https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/) نوشت که Workload-Aware Scheduling یک پله جلو آمده: مسیر native.
 
-خلاصه وضعیت در v1.37:
+## چه چیزی در v1.37 واقعاً Beta شد
 
 - APIهای **Workload** و **PodGroup** (پایه gang scheduling) به **Beta** (`scheduling.k8s.io/v1beta1`) رسیدند.
 - **Workload-Aware Preemption** دیگر feature gate جدا نیست و داخل `GenericWorkload` ادغام شده.
@@ -21,26 +22,11 @@ description: "در Kubernetes v1.37 APIهای Workload و PodGroup و gang sched
 - API جدید **CompositePodGroup** برای سلسله‌مراتب چندسطحی آمده (Alpha، `v1alpha3`).
 - Job بومی فیلد `.spec.scheduling` گرفته تا gang، topology و claim را صریح اعلام کند.
 
-نکته مهم عملی: Beta و Alpha این مجموعه **به‌صورت پیش‌فرض خاموش‌اند** و باید feature gate را دستی روشن کنید. Beta بودن به‌معنی روشن شدن ناگهانی روی کلاستر production نیست.
+نکته عملی که از بقیه مهم‌تر است: Beta و Alpha این مجموعه **به‌صورت پیش‌فرض خاموش‌اند** و باید feature gate را دستی روشن کنید. Beta بودن به‌معنی روشن شدن ناگهانی روی کلاستر production نیست.
 
----
+در صف زمان‌بندی دیگر تک‌تک Podهای گروه جدا صف نمی‌شوند؛ **خود PodGroup** در صف است. `minCount` دیگر immutable نیست؛ controller می‌تواند حداقل اندازه gang را عوض کند بدون این‌که Podهای نشسته‌شده را قطع کند. نسخه آلفا `v1alpha2` با `v1alpha3` عوض شده و روی `disruptionMode` breaking change دارد — اگر از آلفا تست می‌کردید، manifest را باید به‌روز کنید. نام حالت‌های disruption هم عوض شده: `PodGroup` → `all`، `Pod` → `single` تا با CompositePodGroup یک‌دست باشد. اگر `PodGroupPreemptionPolicy` روشن باشد، خود PodGroup فیلد `preemptionPolicy` دارد و مرجع این است که گروه اجازه preemption دارد یا نه.
 
-## Gang scheduling یعنی چه؟
-
-ایده ساده است: برای job توزیع‌شده (آموزش AI، MPI، خیلی از batchها) یا همه Podها با هم جا می‌شوند، یا هیچ‌کدام. اگر scheduler چهار worker از هشت تا را بنشاند و GPU تمام شود، آن چهار تا فقط منابع را می‌سوزانند.
-
-در v1.37:
-
-- صف زمان‌بندی دیگر تک‌تک Podهای گروه را جدا صف نمی‌کند؛ **خود PodGroup** در صف است.
-- `minCount` دیگر immutable نیست؛ controller می‌تواند حداقل اندازه gang را عوض کند بدون این‌که Podهای نشسته‌شده را قطع کند.
-- نسخه آلفا `v1alpha2` با `v1alpha3` عوض شده و روی `disruptionMode` breaking change دارد. اگر از آلفا تست می‌کردید، manifest را باید به‌روز کنید.
-- نام حالت‌های disruption عوض شده: `PodGroup` → `all`، `Pod` → `single` تا با CompositePodGroup یک‌دست باشد.
-
-اگر `PodGroupPreemptionPolicy` روشن باشد، خود PodGroup فیلد `preemptionPolicy` دارد و مرجع این است که گروه اجازه preemption دارد یا نه.
-
----
-
-## CompositePodGroup و DRA
+## درخت گروه و یک ResourceClaim برای همه
 
 Workloadهای واقعی اغلب تخت نیستند: یک driver، چند worker، گاهی چند سطح topology (منطقه، رک). CompositePodGroup درخت گروه می‌سازد. Scheduler کل درخت را یک واحد می‌بیند: یا سیاست ریشه (مثلاً `minGroupCount`) ارضا می‌شود و bind اتمی است، یا هیچ Podی bind نمی‌شود.
 
@@ -50,19 +36,6 @@ Workloadهای واقعی اغلب تخت نیستند: یک driver، چند wor
 
 کتابخانه `workloadbuilder` هم آمده تا controllerهای خارج از درخت بتوانند همین مدل را در API خودشان embed کنند. Job اولین مصرف‌کننده in-tree است.
 
----
-
-## چرا مهم است؟
-
-اگر کلاستر را برای inference/training یا jobهای all-or-nothing می‌سازید، تا امروز یا به schedulerهای خارجی (Volcano، Kueue، Coscheduling) تکیه می‌کردید یا partial scheduling را با گوشت و پوست می‌دیدید. WAS مسیر native است. هنوز GA نشده، CompositePodGroup هنوز Alpha است، و گیت‌ها پیش‌فرض off هستند. یعنی الان وقت آزمایش روی کلاستر تست است، نه روشن کردن خاموش روی production بدون برنامه.
-
-Working Group برای v1.38 از GA شدن Workload/PodGroup، Beta شدن TAS و CompositePodGroup، و هم‌ترازی با Kueue حرف زده است.
-
----
-
-## منابع
-
-- [Kubernetes v1.37: Advancing Workload-Aware Scheduling](https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/)
-- [Kubernetes v1.37 release](https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/)
+Working Group برای v1.38 از GA شدن Workload/PodGroup، Beta شدن TAS و CompositePodGroup، و هم‌ترازی با Kueue حرف زده است. هنوز GA نشده، CompositePodGroup هنوز Alpha است، و گیت‌ها پیش‌فرض off هستند. یعنی الان وقت آزمایش روی کلاستر تست است، نه روشن کردن خاموش روی production بدون برنامه.
 
 </div>
