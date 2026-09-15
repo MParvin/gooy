@@ -1,7 +1,7 @@
 baseURL = "https://gooy.site/"
 defaultContentLanguage = "fa"
 title = "Gooy"
-theme = ["gooy-theme"]
+theme = ["gooy"]
 author = "MParvin"
 ga_analytics = ""
 ga_verify = ""
