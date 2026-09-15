@@ -2,6 +2,7 @@
 title: "Scala 3.9 خط جدید LTS شد؛ SIP-71 و backend پایدار WebAssembly همراهش آمدند"
 date: 2026-09-15T15:49:00+03:30
 draft: false
+slug: "scala-3-9-lts-released"
 tags: ["scala", "lts", "scalajs", "sip-71", "opensource"]
 categories: ["Programming", "Open-source"]
 description: "اعلام ۳ سپتامبر ۲۰۲۶ برای Scala 3.9.0 به‌عنوان LTS بعدی بعد از 3.3؛ into پایدار، Scala.js 1.22 با Wasm، Sloth برای LazyVals روی JDK 26+."

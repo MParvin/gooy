@@ -2,6 +2,7 @@
 title: "React 19.3: View Transitions و Fragment Refs از حالت آزمایشی خارج شدند"
 date: 2026-09-15T15:21:00+03:30
 draft: false
+slug: "react-19-3-view-transitions-fragment-refs"
 tags: ["react", "javascript", "view-transitions", "ssr", "frontend"]
 categories: ["Programming", "Web"]
 description: "ریلیز ۹ سپتامبر ۲۰۲۶ ری‌اکت ۱۹.۳: ViewTransition پایدار، Fragment Refs، browser() برای opt-out از SSR، Trusted Types، و رندر مستقیم Context در Server Components."

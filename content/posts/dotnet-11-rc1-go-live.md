@@ -2,6 +2,7 @@
 title: ".NET 11 RC1 با مجوز go-live برای production منتشر شد"
 date: 2026-09-15T15:28:00+03:30
 draft: false
+slug: "dotnet-11-rc1-go-live"
 tags: ["dotnet", "csharp", "aspnet", "rc", "microsoft"]
 categories: ["Programming", "Cloud"]
 description: "اعلام ۸ سپتامبر ۲۰۲۶ برای .NET 11 RC1: نخستین Release Candidate با پشتیبانی go-live؛ C# 15 unions پایدار، SignalR auth refresh، و بهبود TLS/DNS/JSON."

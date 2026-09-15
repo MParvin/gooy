@@ -2,6 +2,7 @@
 title: "IFM شش مدل K2 Horizon را با Apache 2.0 باز کرد؛ از ۰٫۹B تا MoE کلاس ۳۷۵B"
 date: 2026-09-15T15:56:00+03:30
 draft: false
+slug: "ifm-k2-horizon-open-models-apache-2"
 tags: ["ifm", "k2-horizon", "llm", "apache-2", "opensource", "ai"]
 categories: ["AI", "Open-source"]
 description: "ناوگان K2 Horizon از IFM/MBZUAI: شش مدل Apache 2.0 با حدود ۲۰ تریلیون توکن، پشتیبانی vLLM/SGLang/Ollama روی NVIDIA و AMD و Cerebras."

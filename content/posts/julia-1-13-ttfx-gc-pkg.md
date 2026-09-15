@@ -2,6 +2,7 @@
 title: "Julia 1.13: precompile حدود ۳۰٪ سریع‌تر و GC کامل دیگر تصویر را راه نمی‌رود"
 date: 2026-09-15T15:35:00+03:30
 draft: false
+slug: "julia-1-13-ttfx-gc-pkg"
 tags: ["julia", "release", "gc", "pkg", "opensource"]
 categories: ["Programming", "Open-source"]
 description: "ریلیز ۱۰ سپتامبر ۲۰۲۶ جولیا ۱.۱۳: کاهش latency، RapidhashNano، GC بدون پیمایش objectهای image، هایلایت REPL، zstd در Pkg، JuliaC/trim و GUI جولیاآپ."
