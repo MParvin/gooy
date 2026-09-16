@@ -1,17 +1,17 @@
 ---
-title: "پلاگین Google Cloud Developer برای عامل‌های کدنویسی؛ استاندارد Agent Plugins"
+title: "افزونه Google Cloud Developer برای agentهای کدنویسی AI"
 date: 2026-09-16T14:00:00+03:30
 draft: false
 slug: "google-cloud-developer-agent-plugin"
 tags: ["google-cloud", "mcp", "agents", "claude-code", "codex"]
 categories: ["AI", "Cloud"]
-description: "۱۰ سپتامبر ۲۰۲۶: پلاگین google-cloud-developer در مخزن Google Agent Skills؛ مهارت‌ها به‌علاوه Developer Knowledge MCP. بر پایهٔ مشخصات باز و vendor-neutral Agent Plugins."
+description: "۱۰ سپتامبر ۲۰۲۶: افزونه google-cloud-developer در مخزن Google Agent Skills برای agentهای کدنویسی؛ مهارت‌ها به‌علاوه Developer Knowledge MCP روی مشخصات Agent Plugins."
 image: "/images/google-cloud-developer-agent-plugin.png"
 ---
 
 <div dir="rtl">
 
-مهارت تکی برای عامل کدنویسی نصبش آسان است؛ مدیریت ده‌تا مهارت که باید با یک MCP و یک سری guardrail با هم کار کنند دیگر آسان نیست. ۱۰ سپتامبر ۲۰۲۶ جاناتان لی در [وبلاگ Google Cloud](https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents) پلاگین را به‌عنوان **بستهٔ نصب‌شدنی** معرفی کرد: مهارت‌ها و ابزارهایی که با هم یک کار را می‌کنند، نه فهرست جدا در هر assistant.
+مهارت تکی برای agent کدنویسی نصبش آسان است؛ مدیریت ده‌تا مهارت که باید با یک MCP و یک سری guardrail با هم کار کنند دیگر آسان نیست. ۱۰ سپتامبر ۲۰۲۶ جاناتان لی در [وبلاگ Google Cloud](https://cloud.google.com/blog/topics/developers-practitioners/introducing-the-google-cloud-developer-plugin-for-ai-coding-agents) افزونه را به‌عنوان **بستهٔ نصب‌شدنی** معرفی کرد: مهارت‌ها و ابزارهایی که با هم یک کار را می‌کنند، نه فهرست جدا در هر assistant.
 
 نام بسته: **`google-cloud-developer`**. داخل مخزن **Google Agent Skills** است. تمرکز این نسخهٔ اول، پایه‌ای است که تقریباً هر کاربر Google Cloud لازم دارد: احراز هویت، مجوز، پروژه، و نرده برای عملیات **gcloud**. کنارش پیکربندی سرور MCP به نام **Developer Knowledge** آمده تا عامل روی مستندات رسمی developer گوگل ground شود، نه روی حافظهٔ مدل.
 

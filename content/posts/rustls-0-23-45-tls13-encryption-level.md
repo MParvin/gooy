@@ -1,11 +1,11 @@
 ---
-title: "Rustls ۰٫۲۳٫۴۵: پذیرش نادرست پیام TLS 1.3 بین سطح‌های رمزنگاری"
+title: "Rustls ۰٫۲۳٫۴۵ وصله RUSTSEC-2026-0285 برای پذیرش نادرست پیام‌های TLS 1.3"
 date: 2026-09-16T13:20:00+03:30
 draft: false
 slug: "rustls-0-23-45-tls13-encryption-level"
 tags: ["rustls", "tls", "rust", "rustsec", "security"]
 categories: ["Security", "Programming"]
-description: "RUSTSEC-2026-0285 / GHSA-2mjx-qc3c-rqvc در ۱۴ سپتامبر: پیام handshake TLS 1.3 در سطح رمز اشتباه پذیرفته می‌شد. CVSS 5.3؛ جعل handshake نیست. پچ ≥0.23.45."
+description: "RUSTSEC-2026-0285 در ۱۴ سپتامبر: پیام handshake TLS 1.3 در سطح رمز اشتباه پذیرفته می‌شد. CVSS 5.3؛ جعل handshake نیست. پچ ≥0.23.45."
 image: "/images/rustls-0-23-45-tls13-encryption-level.png"
 ---
 
@@ -13,7 +13,7 @@ image: "/images/rustls-0-23-45-tls13-encryption-level.png"
 
 مثال از خود advisory است: پرواز سرور TLS 1.3 که یک **EncryptedExtensions به‌صورت plaintext** را داخل همان record کنار **ServerHello** می‌چیند. rustls آن را قبول می‌کرد. نباید می‌کرد.
 
-۱۴ سپتامبر ۲۰۲۶ این موضوع همزمان در [RUSTSEC-2026-0285](https://rustsec.org/advisories/RUSTSEC-2026-0285.html) و [GHSA-2mjx-qc3c-rqvc](https://github.com/rustls/rustls/security/advisories/GHSA-2mjx-qc3c-rqvc) آمد. نوع: crypto-failure. امتیاز **CVSS 5.3 MEDIUM** با بردار `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N`. در GHSA هنوز CVE جدا ثبت نشده.
+۱۴ سپتامبر ۲۰۲۶ [RUSTSEC-2026-0285](https://rustsec.org/advisories/RUSTSEC-2026-0285.html) همین را به‌عنوان آسیب‌پذیری crypto-failure ثبت کرد؛ alias گیت‌هاب [GHSA-2mjx-qc3c-rqvc](https://github.com/rustls/rustls/security/advisories/GHSA-2mjx-qc3c-rqvc) است. امتیاز **CVSS 5.3 MEDIUM** با بردار `CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N`. در GHSA هنوز CVE جدا ثبت نشده.
 
 ## RFC چه می‌خواهد؛ rustls چه می‌کرد
 

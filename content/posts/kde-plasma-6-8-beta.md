@@ -1,17 +1,17 @@
 ---
-title: "بتای KDE Plasma ۶٫۸: زمان‌بند پشتیبان Kup و پیش‌نمایش Union برای QtWidgets"
+title: "KDE Plasma ۶٫۸ Beta با Kup و پیش‌نمایش Union theming"
 date: 2026-09-16T14:40:00+03:30
 draft: false
 slug: "kde-plasma-6-8-beta"
 tags: ["kde", "plasma", "kup", "union", "qt", "linux"]
 categories: ["Linux"]
-description: "بتای اول Plasma 6.8 (6.7.90) در ۱۰ سپتامبر ۲۰۲۶: ماژول زمان‌بند پشتیبان kup و Union روی QtWidgets. بتای دوم حدود ۲۴ سپتامبر؛ پایدار حدود ۱۴ اکتبر."
+description: "اعلام ۱۰ سپتامبر ۲۰۲۶ برای Plasma 6.8 beta (6.7.90): ماژول زمان‌بند پشتیبان kup و پیش‌نمایش Union برای QtWidgets. بتای دوم حدود ۲۴ سپتامبر؛ پایدار حدود ۱۴ اکتبر."
 image: "/images/kde-plasma-6-8-beta.png"
 ---
 
 <div dir="rtl">
 
-پنج‌شنبه ۱۰ سپتامبر ۲۰۲۶ KDE [بتای Plasma 6.8](https://kde.org/announcements/plasma/6/6.7.90/) را با شمارهٔ **6.7.90** گذاشت. [Phoronix](https://www.phoronix.com/news/KDE-Plasma-6.8-Beta) همان روز نوشت پایدار **۱۴ اکتبر** است — و آن تاریخ با سی‌امین سالگرد پروژهٔ KDE یکی می‌شود. [جدول زمان Plasma 6](https://community.kde.org/Schedules/Plasma_6) بتای دوم را **6.7.91، پنج‌شنبه ۲۴ سپتامبر** و tarball پایدار را ۸ اکتبر / انتشار ۱۴ اکتبر گذاشته.
+پنج‌شنبه ۱۰ سپتامبر ۲۰۲۶ KDE در [اعلام Plasma 6.8 Beta](https://kde.org/announcements/plasma/6/6.7.90/) نسخهٔ **6.7.90** را گذاشت. [Phoronix](https://www.phoronix.com/news/KDE-Plasma-6.8-Beta) همان روز نوشت پایدار **۱۴ اکتبر** است — و آن تاریخ با سی‌امین سالگرد پروژهٔ KDE یکی می‌شود. [جدول زمان Plasma 6](https://community.kde.org/Schedules/Plasma_6) بتای دوم را **6.7.91، پنج‌شنبه ۲۴ سپتامبر** و tarball پایدار را ۸ اکتبر / انتشار ۱۴ اکتبر گذاشته.
 
 اعلامیهٔ خود KDE کوتاه است. دو چیزی که همان صفحه برجسته کرده، همان دو تیتر این پست‌اند.
 

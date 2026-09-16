@@ -1,11 +1,11 @@
 ---
-title: "OpenAI Agents API در بتای عمومی؛ harness کودکس برای ابر"
+title: "OpenAI Agents API به‌صورت Public Beta برای ساخت agentهای ابری"
 date: 2026-09-16T13:40:00+03:30
 draft: false
 slug: "openai-agents-api-public-beta"
 tags: ["openai", "agents", "codex", "mcp", "api"]
 categories: ["AI"]
-description: "۱۰ سپتامبر ۲۰۲۶: بتای عمومی Agents API با harness مدیریت‌شدهٔ Codex، sandbox میزبان OpenAI یا شرکا، compaction، tool search، MCP و subagent. بدون هزینهٔ جدا غیر از token/tool."
+description: "۱۰ سپتامبر ۲۰۲۶: بتای عمومی Agents API با harness مدیریت‌شدهٔ Codex برای agent ابری. sandbox میزبان OpenAI یا شرکا؛ بدون هزینهٔ جدا غیر از token/tool."
 image: "/images/openai-agents-api-public-beta.png"
 ---
 
