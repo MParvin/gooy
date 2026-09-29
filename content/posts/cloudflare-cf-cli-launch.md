@@ -1,6 +1,6 @@
 ---
 title: "کلادفلر `cf` را اوپن‌بتا کرد؛ CLI برای ۳۰۰۰+ عملیات و ایجنت‌های کدنویس"
-date: 2026-09-29T16:35:00+03:30
+date: 2026-09-29T15:00:00+03:30
 draft: false
 slug: "cloudflare-cf-cli-launch"
 tags: ["cloudflare", "cf-cli", "wrangler", "devtools", "agents", "typescript"]

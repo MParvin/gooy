@@ -1,6 +1,6 @@
 ---
 title: "Flatpak 1.18.4 شش باگ امنیتی بست؛ از overwrite میزبان تا نشت OCI token"
-date: 2026-09-29T16:15:00+03:30
+date: 2026-09-29T14:50:00+03:30
 draft: false
 slug: "flatpak-1-18-4-security"
 tags: ["flatpak", "linux", "cve-2026-97023", "cve-2026-97024", "cve-2026-97025", "sandbox", "desktop"]
