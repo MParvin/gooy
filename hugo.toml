@@ -3,7 +3,6 @@ defaultContentLanguage = "fa"
 title = "Gooy"
 theme = ["gooy"]
 author = "MParvin"
-ga_analytics = ""
 ga_verify = ""
 enableRobotsTXT = true
 canonifyURLs = true
@@ -45,6 +44,7 @@ pagerSize = 10
 rtl = true
 defaultMode = "dark"
 defaultImage = "default-post.svg"
+ga_analytics = "G-0NB0SNM3TL"
 
 [[params.sidebar.links]]
   name = "مستندات برنامه نویسی"
